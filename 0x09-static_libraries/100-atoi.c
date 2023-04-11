@@ -17,11 +17,11 @@ int _atoi(char *s)
 			sign *= -1;
 		i++;
 	}
-       	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
 	{
 		res = (res * 10) + (s[i] - '0');
 		i++;
 	}
 	res *= sign;
 	return (res);
- }
+}
